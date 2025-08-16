@@ -16,7 +16,7 @@ def submit_feedback(feedback: FeedbackCreate):
         "text": result["text"],
         "sentiment": sentiment,
         "createdAt": result["createdAt"],
-        "response": sentiment.get("response", "Thanks for your feedback!")  # default value
+        "response": sentiment["response"]  # default value
     }
 
 
