@@ -37,7 +37,7 @@ The system is designed to:
 
 ## 📂 Project Structure
 
-backend/
+#backend/
 │── controllers/ # API route handlers
 │ ├── feedback_controller.py
 │ ├── feedback_trend_controller.py
@@ -63,7 +63,7 @@ backend/
 │── .env # Environment variables
 
 
-frontend/
+#frontend/
 │── public/ # Static assets (images, icons, etc.)
 │── src/app/ # App Router pages
 │ ├── feedback/visualization/ # Feedback visualization pages
@@ -123,11 +123,11 @@ venv\Scripts\activate
 # On Mac/Linux
 source venv/bin/activate
 
-Install dependencies
+#Install dependencies
 
 pip install -r requirements.txt
 
-Setup .env file 
+#Setup .env file 
 
 NOTE- ALREADY BACKEND HAS THE .env FILE , IF IT'S MISSING CREATE A NEW .env FILE AND PASTE THIS BELOW DATA 
 
@@ -136,12 +136,12 @@ MONGODB_URI=mongodb://localhost:27017
 DB_NAME=feedback
 GROQ_API_KEY=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
 
-Run mock data script
+#Run mock data script
 This will generate or load your mock data into memory / file / DB (depending on your implementation).
 
 python mock_feedback_data.py
 
-SAMPLE DATA IN MONGODP LOOKS LIKES THIS 
+#SAMPLE DATA IN MONGODP LOOKS LIKES THIS 
 
 
 {
@@ -162,7 +162,7 @@ SAMPLE DATA IN MONGODP LOOKS LIKES THIS
 
 
 
-Start backend server
+#Start backend server
 
 Once mock data is ready, run:
 
@@ -175,24 +175,24 @@ Open a new terminal & navigate to frontend
 
 cd frontend
 
-Install dependencies
+#Install dependencies
 
 npm install
 
-Run the frontend
+#Run the frontend
 
 npm run dev
 
 
 4️⃣ Running Together
 
-Start backend (mock API):
+#Start backend (mock API):
 
 cd backend
 uvicorn main:app --reload
 
 
-Start frontend (in another terminal):
+#Start frontend (in another terminal):
 
 cd frontend
 npm run dev
